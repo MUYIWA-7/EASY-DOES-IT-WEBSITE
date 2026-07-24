@@ -162,6 +162,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 3px solid #d4a017;
 }
 
 /* NAV LINKS */
@@ -197,8 +198,7 @@ header{
 /* HERO */
 .hero{
     height: 90vh;
-    background: linear-gradient(rgba(29,21,53,0.75), rgba(29,21,53,0.75)),
-    url("IMG/banner.jpeg");   /* ================ */
+    background-color: #1d1535;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -259,7 +259,9 @@ header{
 
 /* SERVICES */
 .services{
-    background: #f8f9fa;
+    background: #efe3b8;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
 }
 
 /* SERVICE CONTAINER */
@@ -312,6 +314,9 @@ header{
 /* FEATURED PROJECTS */
 .featured-projects{
     background: white;
+    border: 2px solid #d4a017;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(0,0,0,.08);
 }
 
 /* PROJECT CONTAINER */
@@ -460,8 +465,7 @@ header{
 
 /* CTA */
 .cta{
-    background: linear-gradient(rgba(29,21,53,0.9), rgba(29,21,53,0.9)),
-    url("../IMG/banner.jpg");
+    background-color: #1d1535;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
