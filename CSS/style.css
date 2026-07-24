@@ -572,7 +572,7 @@ footer p{
 
 .nav-links{
     display: none;
-    flex-direction: column;
+    
     position: absolute;
     top: 100%;
     left: 0;
@@ -588,23 +588,27 @@ footer p{
 }
 
     .hero{
-        height: auto;
-        min-height: 80vh;
-        padding: 80px 20px;
+        height: 75vh;
+        min-height: 60vh;
+        padding: 60px 20px;
         text-align: center;
     }
 
     .hero-content{
-        width: 100%;
+        max-width: 500px;
+        margin: auto;
+
     }
 
     .hero-content h1{
         font-size: 2.3rem;
         line-height: 1.2;
+        margin-bottom: 15px;
     }
 
     .hero-content p{
         font-size: 1rem;
+        margin-bottom: 25px;
     }
 
     section{
