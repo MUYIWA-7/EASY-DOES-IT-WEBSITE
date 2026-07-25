@@ -99,31 +99,17 @@ header{
 /* NAV LINKS */
 .nav-links a{
     font-weight:500;
-    transition:.3s;
+    
     position:relative;
 }
 
-/* NAV HOVER */
-.nav-links a:hover,
+.nav-links a:hover{
+    color: #d4a017;
+}
+
+/* ACTIVE LINK */
 .nav-links a.active{
-    color:#d4a017;
-}
-
-/* ACTIVE UNDERLINE */
-.nav-links a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-8px;
-    width:0;
-    height:3px;
-    background:#d4a017;
-    transition:.3s;
-}
-
-.nav-links a:hover::after,
-.nav-links a.active::after{
-    width:100%;
+    color: #d4a017;
 }
 
 /* MENU */
@@ -271,7 +257,7 @@ footer{
     background:#111;
     color:#bbb;
     text-align:center;
-    padding:50px 20px;
+    padding:25px 20px;
 }
 
 footer h3{
@@ -279,37 +265,70 @@ footer h3{
     margin-bottom:20px;
 }
 
-footer p{
-    color:#bbb;
-    margin:10px 0;
+.footer-social{
+    margin-bottom: 15px;
 }
+
+.footer-social a{
+    color: #d4a017;
+    font-size: 5rem;
+    transition: 0.3s;
+}
+
+.footer-social a:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+
+footer p{
+    font-size: 0.95rem;
+    color: #ccc;
+    margin: 0;
+}
+
+
 
 /* MOBILE */
 @media(max-width:768px){
 
-    .navbar{
-        padding:10px 0;
-    }
+    @media (max-width:768px){
 
-    .logo img{
-        height:70px;
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:relative;
     }
 
     .menu-toggle{
         display:block;
+        font-size:2rem;
+        cursor:pointer;
     }
 
     .nav-links{
         display:none;
         flex-direction:column;
+        position:absolute;
+        top:100%;
+        left:0;
         width:100%;
-        margin-top:20px;
+        background:#fff;
         text-align:center;
-        gap:15px;
+        padding:30px 0;
+        gap:30px;
+        box-shadow:0 8px 20px rgba(0,0,0,.15);
+        z-index:1000;
     }
 
     .nav-links.active{
         display:flex;
+    }
+
+}
+
+    .logo img{
+        height:70px;
     }
 
     .contact-info,
