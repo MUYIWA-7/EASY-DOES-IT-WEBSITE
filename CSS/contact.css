@@ -257,7 +257,7 @@ footer{
     background:#111;
     color:#bbb;
     text-align:center;
-    padding:25px 20px;
+    padding:20px 20px;
 }
 
 footer h3{
@@ -266,12 +266,12 @@ footer h3{
 }
 
 .footer-social{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 .footer-social a{
     color: #d4a017;
-    font-size: 5rem;
+    font-size: 3rem;
     transition: 0.3s;
 }
 
