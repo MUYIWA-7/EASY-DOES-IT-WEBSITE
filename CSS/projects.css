@@ -47,6 +47,10 @@ header{
     border-bottom: 3px solid #d4a017;
 }
 
+.menu-toggle{
+    display: none;
+}
+
 .logo img{
     width:150px;
 }
